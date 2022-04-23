@@ -29,12 +29,9 @@ const App = () => {
       </AppBar>
       <Grow in>
         <Container>
-          <Stack direction='row' spacing={4}>
-            <Grid item sx={12} sm={7}>
+          <Stack>
+            <Grid item sx={12} sm={12}>
               <Posts setCurrentId={setCurrentId}/>
-            </Grid>
-            <Grid item sx={12} sm={4}>
-              <Form currentId={currentId} setCurrentId={setCurrentId} />
             </Grid>
           </Stack>
         </Container>
