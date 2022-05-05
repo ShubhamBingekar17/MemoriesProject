@@ -15,7 +15,6 @@ const Post = ({ post, setCurrentId }) => {
 
   const deletepost = (id) => {
     dispatch(deletePost(id));
-    window.location.reload();
   }
   
   return (

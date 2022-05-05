@@ -17,12 +17,14 @@ const App = () => {
 
   const [currentId , setCurrentId] = useState(null);
 
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
   const dispatch = useDispatch();
   useEffect(() => {
+    console.log("logggs")
+
     dispatch(getPosts());
   }, [dispatch])
   
